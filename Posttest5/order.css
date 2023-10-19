@@ -1,0 +1,147 @@
+/* Mengatur gaya default untuk semua elemen HTML */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Gaya untuk elemen body (halaman web) */
+body {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Gaya untuk latar belakang */
+.bg {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: 250% 250%;
+  background-color: #f1bf9f;
+}
+
+/* Gaya untuk kontainer utama */
+.container {
+  width: 80%;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* Gaya untuk judul */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Gaya untuk judul h2 */
+.title h2 {
+  font-size: 32px;
+  text-align: left;
+}
+
+/* Gaya untuk tombol kembali */
+.back {
+  text-decoration: none;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.425);
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+/* Gaya tombol kembali saat dihover */
+.back:hover {
+  border: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+/* Gaya kotak tabel */
+.table-box {
+  margin-top: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.425);
+  overflow: auto;
+  border-radius: 10px;
+}
+
+/* Gaya tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.425);
+  backdrop-filter: blur(10px);
+}
+
+/* Gaya sel dalam tabel */
+table tr td {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.425);
+  text-align: center;
+  height: fit-content;
+}
+
+/* Gaya sel pertama dan terakhir dalam tabel */
+table tr:first-child td,
+table tr:last-child td {
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+/* Gaya sel pertama dalam tabel */
+table tr:first-child td {
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.425);
+  color: #f1bf9f;
+}
+
+/* Gaya untuk tombol */
+.tombol {
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  background:rgba(0, 0, 0, 0.425);
+  transition: all 0.5s;
+}
+
+/* Gaya untuk teks dalam tombol */
+.tombol a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Gaya tombol saat dihover */
+.tombol:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: rgb(202, 107, 44);
+}
+
+/* Gaya untuk elemen icon "ubah" */
+.ubah {
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 0 5px;
+  transition: all 0.5s;
+}
+
+/* Gaya untuk elemen icon "hapus" */
+.hapus {
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 0 5px;
+  transition: all 0.5s;
+}
+
+/* Gaya "ubah" dan "hapus" saat dihover */
+.ubah:hover,
+.hapus:hover {
+  background: rgba(0, 0, 0, 0.425);
+}
